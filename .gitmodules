@@ -1,3 +1,6 @@
 [submodule "External/sqlite-net"]
 	path = External/sqlite-net
 	url = git://github.com/bowlofstew/sqlite-net.git
+[submodule "External/log4net"]
+	path = External/log4net
+	url = git://github.com/bowlofstew/log4net
