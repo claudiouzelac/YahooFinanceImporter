@@ -51,9 +51,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Notes.txt" />
-    <Content Include="YahooImporterDefaultConfig.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -68,6 +65,10 @@
     <ProjectReference Include="..\CoreUtils\CoreUtils.csproj">
       <Project>{541FDC08-5D2A-402A-80BB-EDF802BAEE02}</Project>
       <Name>CoreUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlUtils\SqlUtils.csproj">
+      <Project>{b4839c5c-1a60-41aa-a5aa-c9c7e689b9df}</Project>
+      <Name>SqlUtils</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

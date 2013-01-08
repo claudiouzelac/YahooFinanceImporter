@@ -3,24 +3,31 @@ using System.Collections.Generic;
 using System.IO;
 using CoreUtils.Config;
 using CoreUtils.Log;
+using SqlUtils;
 
 namespace YahooImporter
 {
     internal class Importer
     {
         private List<string> _symbolSet;
+        private readonly bool _usingDatabase;
 
         public Importer()
         {
+            _usingDatabase = AppConfig.GetBoolOrThrow("UsingDatabase");
             _symbolSet = new List<string>();
-
             PopulateSymbolSet();
             SendYahooRequest();
         }
 
         private void PopulateSymbolSet()
         {
-
+            if(_usingDatabase)
+            {
+                string databaseFile = Path.Combine(Environment.CurrentDirectory, "stocks.db");
+                var database = new Stocks(databaseFile);
+            }
+            
             bool isSubsetting = AppConfig.GetBoolOrThrow("IsSubsetting");
             if (isSubsetting)
             {
