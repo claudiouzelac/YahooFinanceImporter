@@ -1,0 +1,15 @@
+﻿Usage:
+The importer will push all fundamental/technical data into a single flat file called Symbol.Technical.DateTime.txt and it will push the 
+time series data into another file called Symbol.TimeSeries.DateTime.txt.  It will also produce a SymbolsAndIndustries.txt which contains the mappings of 
+symbols to their respective industries, sectors, and subsectors.  
+
+To use the in the normal mode (all symbols requested), just start it up and go.  In order to run it in selective mode, open the YahooImporterDefaultConfig.txt
+change the line ${.AppName}.SubsetMode=true and then place the symbols of choice into the next line ${.AppName}.SymbolSubset=XOM,CVX,  then start the program
+as normal.  You must change the SubsetMode to false when you are ready to return to normal operating mode.
+
+Future Upgrades/work projects:
+Deltafication of updates
+Email notifications with attachments of morning process
+Performance metrics
+
+ 
