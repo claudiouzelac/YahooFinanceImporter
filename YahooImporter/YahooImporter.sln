@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YahooImporter", "YahooImporter\YahooImporter.csproj", "{65B2C467-1AF9-4FED-A1F4-81147D425FF5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libs", "Libs", "{F56FA2B6-22D4-4150-ACED-009A352A0ADA}"
@@ -13,6 +13,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreUtils", "CoreUtils\CoreUtils.csproj", "{541FDC08-5D2A-402A-80BB-EDF802BAEE02}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BizUtils", "BizUtils\BizUtils.csproj", "{631FD1A1-F9D2-4550-A8CC-E812BF365CA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.vs2010", "..\External\log4net\src\log4net.vs2010.csproj", "{181FE707-E161-4722-9F38-6AAAB6FAA106}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +48,12 @@ Global
 		{631FD1A1-F9D2-4550-A8CC-E812BF365CA1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{631FD1A1-F9D2-4550-A8CC-E812BF365CA1}.Release|x86.ActiveCfg = Release|Any CPU
 		{631FD1A1-F9D2-4550-A8CC-E812BF365CA1}.Release|x86.Build.0 = Release|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{181FE707-E161-4722-9F38-6AAAB6FAA106}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,5 +61,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{541FDC08-5D2A-402A-80BB-EDF802BAEE02} = {F56FA2B6-22D4-4150-ACED-009A352A0ADA}
 		{631FD1A1-F9D2-4550-A8CC-E812BF365CA1} = {F56FA2B6-22D4-4150-ACED-009A352A0ADA}
+		{181FE707-E161-4722-9F38-6AAAB6FAA106} = {F56FA2B6-22D4-4150-ACED-009A352A0ADA}
 	EndGlobalSection
 EndGlobal
