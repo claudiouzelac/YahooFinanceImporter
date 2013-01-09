@@ -10,6 +10,9 @@ using CoreUtils.Log;
 
 namespace YahooImporter
 {
+    /*
+     *  This class performs all required web calls to Yahoo! Finance.   
+     */
     public sealed class YahooFinanceConnection
     {
         private const string HistoryUrl =
@@ -192,7 +195,6 @@ namespace YahooImporter
             {
                 AppLog.WriteLog(Level.Error, exception.Message);
             }
-            return;
         }
 
         private static string AddColumn(DataTable table, int windowLenth)

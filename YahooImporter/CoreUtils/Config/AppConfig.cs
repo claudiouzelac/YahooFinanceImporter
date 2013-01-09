@@ -5,14 +5,17 @@ using System.Linq;
 
 namespace CoreUtils.Config
 {
-    //AppConfig is a wrapper that isolates consuming code from having to deal with the complexities of the
-    //Microsoft configuration manager.  One such complexity is the casting of datatypes as they are transferred
-    //out of the application configuration flat file to memory.
-
+    /*
+     *  The AppConfig class handles interfacing with the App.config for the Windows Form application.  It exposes
+     *  several return type utility methods that attempt to perform the relevant conversions.
+     */
     public static class AppConfig
     {
         private static Configuration _configuration;
 
+        /// <summary>
+        /// This static method opens the application configuration and reads it into memory(_configuration).
+        /// </summary>
         public static void FindAppConfigOrThrow()
         {
             _configuration = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
